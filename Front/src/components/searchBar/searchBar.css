@@ -1,0 +1,25 @@
+.boxJuegos {
+    padding: 0em 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    background-color: transparent;
+  }
+
+
+
+.btnSearch{
+    background-color: var(--fifth-color); 
+    color:var(--third-color); 
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btnSearch:hover {
+    background-color: var(--third-color);
+    color:var(--fifth-color); 
+  }

@@ -1,0 +1,95 @@
+.boxHome {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    font-family: var(--principal-font);
+    background-image: url('./../assets/img/looplay_fondobusqueda.png');
+
+  }
+
+  .boxBusqueda {
+    height: 20%;
+
+    
+  }
+
+  .boxSearchTools {
+    width: 100%;
+    height: 20%;
+    margin:0;
+  }
+
+  .boxHomeGames {
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    background-color: var(--fourteenth-color);
+  }
+
+  .titleSearch {
+    text-align: center;
+    color: var(--second-color);
+    font-family: var(--principal-font);
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    padding: 2% 0;
+    }
+
+  .title2{
+    text-align: center;
+    color: var(--second-color);
+    font-family: var(--principal-font);
+    font-size: 40px;
+    }
+
+  .containerJuegos {
+    height: 10em;
+  }
+
+  .boxResults {
+    font-family: var(--principal-font);
+    display: "flex";
+    flex-direction: "column";
+    justify-content: "center";
+    padding-top: 2em;
+    padding-bottom: 4em;
+  }
+
+
+  @media (max-width: 768px) {
+    .boxSearch{
+    height: 15em;
+    }
+
+    .boxCategorias {
+      display: none;
+    }
+
+    .boxSearchTools {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 9em;
+    }
+
+    .titleSearch {
+      width: 70%;
+      justify-content: center;
+      margin:0 auto;
+      padding-top:5%;
+    }
+  }
+  
+    @media (max-width: 480) {
+      .boxSearch{
+        height: 20em;
+      }
+
+
+
+    }

@@ -1,0 +1,75 @@
+.registerPage {
+    min-height: calc(100vh - 280px);
+}
+
+.bigContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.formRegisterContainer {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.botonCrearCuenta {
+    background-color: var(--third-color);
+    color: white;
+    margin-top: 20px;
+}
+
+.inputRegister {
+    background-color: white;
+    border-radius: 5%;
+
+}
+
+.loginContainerRegister {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+@media (max-width: 900px) {
+
+.registerPage {
+    min-height: calc(100vh - 200px);
+}
+
+.nameContainer {
+    flex-direction: column;
+}
+
+.formRegisterContainer {
+    align-items: center;
+    width: 70%;
+}
+
+.bigContainer {
+    width: 100vw;
+}
+.loginContainerRegister {
+    align-items: center;
+}
+
+
+
+
+
+
+
+}
+

@@ -1,0 +1,101 @@
+stages:          
+  - build-frontend
+  - deploy-frontend
+  - build-backend
+  - test-backend 
+  - deploy-backend
+
+frontend-build:
+  image: node:latest     
+  stage: build-frontend
+  script:
+    - echo "Installing dependencies..."
+    - cd Front
+    - npm install react-datepicker
+    - npm install @mui/material
+    - npm install @emotion/react
+    - npm install @emotion/styled
+    - npm install @mui/icons-material
+    - npm install formik
+    - npm install 
+    - echo "Building frontend..."
+    - npm run build
+    - echo "Build complete."
+  artifacts:
+    name: vite_build
+    paths:
+      - Front/dist/
+  rules: 
+    - changes: 
+      - Front/**/*
+
+backend-build:
+  image: maven:3-openjdk-18        
+  stage: build-backend
+  script:
+    - echo "building back-end"
+    - cd Back
+    - mvn package
+    - echo "Back-end was built successfully"
+  artifacts:
+    paths:
+    - Back/target/
+  rules:
+    - changes:
+        - Back/**/*
+
+backend-test:
+  stage: test-backend
+  image: maven:3.8.6-openjdk-18
+  script:
+    - echo "Testing the app"
+    - cd Back
+    - mvn test
+    - echo "Finished testing the app."
+  rules:
+    - changes:
+        - Back/**/* 
+frontend-deploy:      
+  image: python:latest
+  needs: [frontend-build]
+  stage: deploy-frontend  
+  script:
+    - echo "Deploying front..."
+    - pip install awscli
+    - aws --version
+    - aws configure set aws_secret_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - echo "Uploading files to AWS Bucket"
+    - aws s3 sync Front/dist/ s3://bucket-grupo6c5-hosting
+    - echo "Application successfully deployed."
+  rules:
+    - changes:
+        - Front/**/*
+
+variables:
+  SSH_PRIVATE_KEY: "$SSH_PRIVATE_KEY"
+  DEPLOY_SERVER_IP: "$DEPLOY_SERVER_IP"
+
+backend-deploy:      
+  stage: deploy-backend
+  before_script:
+    - apk update && apk add openssh-client bash
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - touch ~/.ssh/config
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - ssh-keyscan -H "$DEPLOY_SERVER_IP" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts  
+  script:
+    - echo "Deploying application..."
+    - ssh ubuntu@$DEPLOY_SERVER_IP "sudo systemctl stop proyectoIntegrador.service"
+    - scp Back/target/*.jar ubuntu@$DEPLOY_SERVER_IP:/home/ubuntu/back/target/
+    - ssh ubuntu@$DEPLOY_SERVER_IP "sudo systemctl start proyectoIntegrador.service"
+    - echo "Application successfully deployed."
+  rules:
+    - changes:
+        - Back/**/* 
+
+

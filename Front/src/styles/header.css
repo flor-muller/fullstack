@@ -1,0 +1,150 @@
+.header-fix {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    /* padding: 10px; */
+    
+  }
+  
+  .logoLink {
+    background-color: white;
+    outline-color: transparent;
+    border:none;
+  }
+
+  .logoLink:focus {
+    outline-color: white;
+    border:none;
+    outline-style: none;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 35px;
+
+  }
+  .logo img {
+    width: 23rem; 
+    height: 4rem;
+  }
+  
+
+  .menu-toggle{
+    display:none
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ 
+  }
+  
+  .button-login {
+    font-family: 'Raleway';
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+  }
+
+  .button-login button {
+  background-color: #00CCBF; 
+  color: #ffffff; 
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.user-initials-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e4eaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-initials {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.user-initials {
+  color: #fff;
+  font-size: 35px;
+}
+
+.button-login button:hover {
+  background-color: #3F7C85; 
+}
+
+.username{
+  color: #fff;
+  background-color: #00CCBF;
+  border-radius: 80px;
+  font-family: var(--principal-font);
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+  
+ 
+  
+  @media (max-width: 768px) {
+    .header-fix {
+      width: 768px;
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      /* padding: 2em; */
+    }
+    .button-login {
+      margin-bottom: 10px;
+      display: none;
+    }
+    .menu-toggle{
+      display:inline;
+      width: 15px;
+    height: 15px;
+      }
+
+      .buttons-container {
+        padding-right: 20px;;
+      }
+    
+  }
+    @media (max-width: 480px){
+      .logo {
+      font-weight: bold;
+      font-size: 10px;
+      margin: 15px;
+    }
+    
+    }
+
+@media (max-width: 480px){
+  .buttons-container {
+    padding-right: 20px;;
+  }
+
+    .header-fix{
+      display: flex;
+      width: 480px;
+    }
+
+    .logo img {
+      width: 250px; 
+      height: 45px;
+    }
+
+  }

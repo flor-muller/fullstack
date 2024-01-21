@@ -1,0 +1,15 @@
+.letrasCalendar{
+    font-family: var(--principal-font);
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--sixth-color);
+    margin-left: 5em;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.available-date{
+    color: var(--third-color);
+    font-weight: bold;
+}

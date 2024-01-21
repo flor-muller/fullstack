@@ -1,0 +1,34 @@
+.cardCategories {
+  border: "none";
+  width: "20vw";
+  font-family: var(--principal-font);
+}
+
+
+.titleCategories {
+  font-family: var(--principal-font);
+  color: white;
+  padding-top: 20px;
+  font-weight: 200;
+}
+
+.containerJuegos {
+  width: 10em;
+  height: 10em;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.containerJuegos:hover {
+  background-color: #c7c3c3;
+  color: var(--fifth-color);
+  border-radius: 42% 58% 31% 69% / 76% 22% 78% 24%;
+}
+
+/* 
+Arreglar el responsive */
+@media screen and (max-width: 1278px) {
+}
+
+@media screen and (max-width: 706px) {
+}

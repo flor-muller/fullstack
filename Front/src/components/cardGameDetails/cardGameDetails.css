@@ -1,0 +1,485 @@
+.generalDetails {
+  background-image: url('../../assets/img/looplay_fondobusqueda.png');
+  width: 100vw;
+}
+
+
+.titleBackButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+.backButton {
+  background-color: var(--fifth-color);
+  font-family: var(--principal-font);
+  width: 5rem;
+  margin-left: 2%;
+  color: white;
+  font-weight: 500;
+  &:hover {
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+  }
+}
+
+.gameNameDetails{
+  flex-grow: 1;
+  text-align: center;
+  padding-top: 2%;
+  font-weight: 400;
+  font-family: var(--principal-font);
+  color: var(--second-color);
+  font-size: 40px;
+  margin: 0;
+}
+
+.ratingDetails {
+  padding-bottom: 10%;
+}
+
+
+/*Modulo imagenes*/
+
+/* .boxJuegos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--principal-font);
+}  */
+
+.contenedorImg {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+}
+
+.imagenContainerDetails {
+  background-color: white;
+  width:60%;
+  height: 60vh;
+  border-radius:  20px 0 0 20px ;
+}
+
+.viewMoreButtonDetails {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+/* Modulo contenido del medio*/
+
+.backgroundContent {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: 60vh;
+  background-color: white;
+  margin-right: 4%;
+  border-radius: 0 20px 20px 0;
+}
+
+
+
+.descriptionP {
+  font-family: var(--secondary-font);
+  color: var(--second-color);
+  font-size: 20px;
+  margin: 0;
+}
+
+.tituloJuego {
+  font-family: var(--principal-font);
+  color: var(--sixth-color);
+  font-size: 24px;
+  margin:0;
+  padding-top: 30px;
+}
+
+.iconGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content:space-around;
+  color: var(--fifth-color);
+}
+
+.iconGroup p {
+  font-family: var(--principal-font);
+  color: var(--second-color);
+}
+
+/* Rating */
+
+.ratingDetails {
+  font-family: var(--principal-font);
+  font-size: 20px;
+}
+
+
+
+/*Modulo calendario*/
+
+.containerCalendar {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6%;
+}
+
+.holder {
+  width: 50%;
+}
+
+.textCalendar {
+  font-family: var(--principal-font);
+  color: var(--fifth-color);
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 20%;
+}
+
+.textCalendar p {
+  padding:0;
+  margin:0;
+}
+
+.reservarButton {
+  margin-top: 6%;
+}
+
+
+
+.boxJuegosCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.centerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.containerIconos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+  margin: 2em;
+}
+.ContenedorCalendar{
+  display: flex;
+  justify-content: center;
+  gap: 15em;
+  padding-top: 30px;
+
+}
+
+.iconWrapper {
+  margin-right: 1em;
+}
+
+
+
+
+.datesButton {
+  padding-left: 1%;
+  padding-right: 6%;
+}
+
+.boxCardJuegos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mediaWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5%; 
+}
+
+.imagenes img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.iconsDetail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 10%; 
+  margin-top: 45px;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5%; 
+  margin-bottom: 5%;
+  margin-top: 45px;
+  font-family: var(--principal-font);
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+  margin-right: 2%; 
+  gap: 10%; 
+}
+
+.iconText {
+  margin-left: 1%; 
+}
+
+.verMasButton {
+  font-family: var(--principal-font);
+  font-weight: 600;
+  background-color: var(--second-color);
+  color: #fff;
+  width: 15em;
+  border-radius: 8px;
+}
+
+.reservarButton:hover {
+  background-color: var(--third-color);
+  color: var(--fifth-color);
+}
+.reservarButton {
+  font-family: var(--principal-font);
+  font-weight: 600;
+  background-color: var(--sixth-color);
+  color: #fff;
+  width: 15em;
+  border-radius: 8px;
+}
+
+.verMasButton:hover {
+  background-color: var(--third-color);
+  color: var(--fifth-color);
+}
+
+.contenidoJuego img {
+  width: 100%;
+  height: 100%;
+}
+
+.titleBackButton{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.tituloJuego {
+  font-weight: bold;
+}
+
+.mainImage {
+  width: 250px;
+  height: 250px;
+}
+
+.gridImages {
+  width: 150px;
+  height: 150px;
+}
+
+.ratingContainer {
+  padding-bottom: 10%;
+}
+
+@media (max-width: 768px) {
+
+  
+  .buttons-container {
+    margin: 0;
+    padding-left: 20%;
+  }
+  .descriptionP {
+    display: none;
+  }
+
+  .contenedorImg {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    padding: 0;
+    
+  }
+
+  .mainImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .gridImages {
+    width: 100px;
+    height: 100px;
+  }
+
+  .imagenContainerDetails {
+    height: 30vh;
+    width: 90%;
+    border-radius: 20px;
+    margin-left: 5%;
+  }
+
+  .backgroundContent {
+    margin-top: 3%;
+    width: 90%;
+    height: 40vh;;
+    border-radius: 20px;
+    margin-right: 0;
+    margin-left: 5%;
+  }
+
+
+  .verMasButton {
+    display: none;
+  }
+
+  .containerCalendar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContenedorCalendar {
+    width: 768px;
+    align-self: center;
+  }
+
+  .botonReservar {
+    padding-bottom: 40%;
+  }
+
+  .datesButton {
+    align-self: center;
+  }
+
+  .ratingContainer {
+    align-self: center;
+  }
+
+  .tituloJuego {
+    align-self: center;
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .descriptionP {
+    display: none;
+  }
+
+  .contenedorImg {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    
+  }
+
+  .mainImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .buttons-container {
+    margin:0;
+  }
+  .gridImages {
+    width: 75px;
+    height: 75px;
+  }
+
+  .imagenContainerDetails {
+    height: 25vh;
+    width: 90%;
+    border-radius: 20px;
+    margin-left: 5%;
+    padding-top: 10%
+  }
+
+  .backgroundContent {
+    margin-top: 3%;
+    width: 90%;
+    height: 40vh;;
+    border-radius: 20px;
+    margin-right: 0;
+    margin-left: 5%;
+  }
+
+
+  .verMasButton {
+    display: none;
+  }
+
+  .containerCalendar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ContenedorCalendar {
+  
+    align-self: center;
+  }
+
+  .botonReservar {
+    padding-bottom: 40%;
+  }
+
+  .datesButton {
+    align-self: center;
+  }
+
+  .ratingContainer {
+    align-self: center;
+  }
+
+  .tituloJuego {
+    align-self: center;
+  }
+
+
+
+
+.header-fix{
+display: flex;
+flex-direction:row;
+align-content:space-between; 
+width: 480px;
+}
+
+.logo{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.menu-toggle{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.logo img{
+  width: 95%;
+  height: auto;  
+}
+
+
+
+
+
+}

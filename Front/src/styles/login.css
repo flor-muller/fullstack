@@ -1,0 +1,7 @@
+.noRegister{
+    font-family: var(--principal-font);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}

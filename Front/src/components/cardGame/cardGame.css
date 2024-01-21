@@ -1,0 +1,143 @@
+  .boxHomeGames{
+    background-color:#E6F4F7;
+    height: 100%;
+  }
+
+  .containerGamesHome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 20vw;
+    height: 13rem;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 1%;
+  }
+
+  .imageHomes {
+    height: 150px;
+    width: 150px;
+  }
+
+  .containerImages {
+    padding-left:4%;
+  }
+
+  .containerContentGames {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    width: 40%;
+  }
+
+  .MoreButton {
+    font-family: var(--principal-font);       
+    margin-left: auto;
+    color: var(--sixth-color);
+    font-weight: 600;
+    background-color: white;          
+  }
+
+  
+.card-title {
+    text-align: center;
+    color: #3F7C85;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--principal-font);
+    margin:0;
+    padding-bottom: 5%;
+  }
+  
+  .card-category {
+    text-align: center;
+    font-family: var(--principal-font);
+    color: var(--fifth-color);
+    font-size: 12px;
+    margin:0;
+    padding-bottom: 5%;
+  }
+
+  .buttonHomeGames {
+    align-self: center;
+    padding-top:10%;
+    outline: 0;
+    border: 0;
+  }
+
+  .a {
+    position: relative;
+    outline: 0;
+    border: 0;
+  }
+  
+  .a::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: var(--sixth-color);
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+      outline: 0;
+      border: 0;
+    }
+  
+  .a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    outline: 0;
+    border: 0;
+  }
+
+   @media (max-width: 768px) {
+   .containerGamesHome {
+    width: 40%;
+   }
+  }
+  
+
+
+  @media (max-width: 480px){
+  .containerGamesHome {
+  width: 60%;
+  height: 50%;
+  }
+
+  .containerImages {
+    width: 100%;
+    padding: 0;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .containerContentGames {
+    width: 100%;
+    padding: 0;
+  }
+
+  .buttonHomeGames {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .MoreButton {
+    margin:0;
+    padding-bottom: 1rem;
+
+  }
+
+
+}
+
+  
+  

@@ -1,0 +1,70 @@
+.resultsCategoriesContainer {
+    width: 100%;
+}
+.paginationCategories {
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    margin: 10px;
+}
+
+.boxPageRecommendationsCategories {
+    background-image: url("../assets/img/looplay_fondobusqueda.png");
+    background-size: cover;
+    background-position: right;
+}
+.titleCategoriesPage {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-top: 2%;
+    font-size: 26px;
+    font-family: var(--principal-font);
+    color: var(--second-color);
+
+}
+
+.titlePrincipalCategories {
+    font-family: var(--principal-font);
+    color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+@media (max-width: 768px) {
+    .boxGamesCategoriesResults {
+        margin: 0;
+    }
+    .resultsCategoriesContainer {
+        margin:0 auto;
+    }
+
+    .titleCategoriesPage {
+        width: 70%;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5% 0;
+    }
+
+    .containerDropdownCategorias {
+        align-self: center;
+    }
+
+    .titlePrincipalCategories  {
+        text-align: center;
+    }
+
+
+  }
+  
+    @media (max-width: 480) {
+        .resultsCategoriesContainer {
+            margin:0 auto;
+            width: 100vw;
+        }
+
+    }
+
+

@@ -1,0 +1,276 @@
+.boxGamesCategoriesResults {
+    padding: 2em 5em;
+    display: grid;
+    grid-template-columns: repeat(2,5fr);
+    justify-content: center;
+    gap: 1em;
+    }
+
+.juegosCardContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:  20px 20px 60px var(--fifth-color),
+    -20px -20px 60px #ffffff;
+    }
+
+.imagenResultsCategories {
+    height: 150px;
+    width: 150px;
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 30px;
+    }
+
+.gameTitle {
+    font-family: var(--principal-font);
+    color: #3F7C85;
+    font-size: 28px;
+    font-weight: 500;
+    padding-right: 20px;
+    align-self:flex-start;
+    margin: 0;
+    padding-top: 5%;
+    }
+
+.categoryTitle {
+    font-family: var(--principal-font);
+    color: var(--fifth-color);
+    font-size: 20px;
+    font-weight: 500;
+    align-self:flex-start;
+    margin:0;
+    padding-top: 2%;
+}
+
+.categoryTitleRating{
+    font-family: var(--principal-font);
+    color: var(--fifth-color);
+    font-size: 20px;
+    font-weight: 500;
+    align-self:flex-start;
+    margin:0;
+}
+
+.categoryContainerRating {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+.categoryTitleCharacteristics {
+    font-family: var(--principal-font);
+    color: var(--fifth-color);
+    font-size: 20px;
+    font-weight: 500;
+    align-self:flex-start;
+    margin:0;
+    padding-top: 2%;
+}
+
+.cardDescription {
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: justify;
+    margin:0;
+    font-family: var(--secondary-font);
+    color: var(--fifth-color);
+    font-size: 18px;
+    }
+    
+
+.title {
+    text-align: center;
+    color: var(--second-color);
+    font-family: var(--principal-font);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 1em;
+    }
+
+.resultsCategoriesContainer {
+    background-color: #E6F4F7;
+
+    }
+
+.juegosCardContainer > .MuiCardContent-root > .MuiBox-root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    }
+
+.containerContent {
+    display:flex; 
+    flex-direction:column;
+    height: 100%;
+    width:100%;
+}
+
+.containerDropdownCategorias {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+.containerButtonIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+}
+
+.iconsCategories {
+    font-size: 20px;
+    color: var(--seventh-color);
+    padding-top: 2%;
+}
+
+.containerIcons {
+    display: flex;
+    gap: 30px;
+}
+
+.buttonContainer {
+        margin: auto;
+        margin: 0;
+        margin-top: auto;
+        padding-bottom: 30px;
+        padding-right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        justify-content: flex-end;
+
+}
+
+.gamePrice {
+    display: flex; 
+    align-self: flex-end; 
+    padding-bottom: 4%;
+    margin: 0;
+    color: var(--second-color); font-family: var(--principal-font);
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.viewMoreButton {
+    margin-left: auto;
+    background-color:#3F7C85;
+        width: 10rem;
+        color: white;
+        font-weight: 800;
+        border: none;
+        &:hover {
+        background-color: var(--seventh-color);
+        color:white;
+}}
+
+@media (max-width: 768px) {
+    .containerDescription {
+        display: none;
+    }
+
+    .juegosCardContainer {
+        flex-direction: column;
+    }
+
+    .containerDropdownCategorias {
+        justify-content: center;
+    }
+    .card-title {
+        padding: 10px 20px;
+        font-size: 20px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .juegosCardContainer {
+        height: 35vh;
+        }
+    
+    .botonContainer {
+        padding-right: 8px;
+        align-self: center;
+    }
+
+    .imagenResultsCategories {
+        padding-top: 20px;
+        padding-bottom: 20px;
+ 
+    }
+
+    .imagenContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categoryContainerRating {
+        display: none;
+    }
+
+    .containerButtonIcons {
+        display: none;
+    }
+    .gameTitle {
+        font-size: 20px;
+        padding-left: 10%;
+        font-weight: 600;
+    }
+
+    .categoryTitle {
+        padding-left:10%;
+    }
+
+}
+
+@media (max-width: 480px) { 
+    .boxGamesCategoriesResults {
+        grid-template-columns: repeat(1,5fr);
+        padding: auto;
+        }
+    
+    .juegosCardContainer {
+        height: 35vh;
+        }
+    
+    .containerIconos {
+        gap: 10px;
+        padding-bottom:10px;
+        }
+    
+    .containerBotonYIconos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .precioJuego {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .containerDescription {
+        display: none;
+    }
+
+    .categoryContainerRating {
+        display: none;
+    }
+
+    .containerButtonIcons {
+        display: none;
+    }
+
+    .gameTitle {
+        font-size: 20px;
+    }
+
+
+
+}
+
+

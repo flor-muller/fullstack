@@ -1,0 +1,107 @@
+.container-profile {
+    font-family: var(--principal-font), sans-serif;
+    color: var(--fifth-color);
+    line-height: 1.5;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    height: 10px;
+  }
+  
+  .container-card {
+    background-color: var(--first-color);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container-card p {
+    margin: 0;
+  }
+  
+  .container-card label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .container-card select {
+    margin-left: 10px;
+  }
+  
+  .container-card hr {
+    border: none;
+    border-top: 1px solid var(--fifth-color);
+    margin-top: 20px;
+  }
+  
+  .container-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .container-card a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  
+  .container-card a:hover {
+    color: #868693;
+  }
+  
+  .container-card .div-general {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container-card body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  .container-card h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  .container-card button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  .container-card button:hover {
+    border-color: #646cff;
+  }
+  
+  .container-card button:focus,
+  .container-card button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .container-card :root {
+      color: #1f71b9;
+      background-color: #ffffff;
+    }
+  
+    .container-card a:hover {
+      color: #747bff;
+    }
+  
+    .container-card button {
+      background-color: #f9f9f9;
+    }
+  }
+  

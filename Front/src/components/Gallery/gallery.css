@@ -1,0 +1,20 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap:20px;
+}
+
+.main-image {
+  width: 50%;
+  height: auto;
+}
+
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+ 
+}

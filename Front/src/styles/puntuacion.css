@@ -1,0 +1,11 @@
+.tituloResenas {
+    font-family: var(--principal-font);
+    font-weight: 400;
+    color: var(--second-color);
+  }
+
+  .avgp {
+    font-family: var(--principal-font);
+    font-weight: 500;
+    color: var(--second-color);
+  }

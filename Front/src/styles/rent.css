@@ -1,0 +1,196 @@
+.titulo {
+  text-align: left;
+  font-family: var(--secondary-font);
+}
+
+
+.titulo h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  color: var(--fifth-color);
+}
+
+
+.titulo h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--fifth-color);
+}
+
+
+.principalContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 200px;
+}
+
+
+.columnaUno{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-left: 2em;
+  gap: 50px;
+  padding-bottom: 100px;
+}
+.columnaDos{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-left: 2em;
+  gap: 50px;
+}
+
+
+
+
+.buttonsContainer{
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+
+.reservarButton {
+  font-family: var(--principal-font);
+  font-weight: 600;
+  background-color: var(--sixth-color);
+  color: #fff;
+  border-radius: 8px;
+}
+.reservarButton:hover {
+  background-color: var(--third-color);
+  color: var(--fifth-color);
+}
+
+
+.cancelarButton:hover {
+  background-color: var(--third-color);
+  color: var(--fifth-color);
+}
+.cancelarButton {
+  font-family: var(--principal-font);
+  font-weight: 600;
+  background-color: var(--fifth-color);
+  color: #fff;
+  border-radius: 8px;
+}
+
+
+.datosPersonales{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.formDireccion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 10px;
+}
+
+
+.textFieldDireccion {
+  margin: 0.5%;
+  width: 450px;;
+}
+
+
+
+
+.precioDia {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.descripcion {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--fifth-color);
+}
+
+
+
+
+.datosFechas{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.datosDevolu{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.principalContainer{
+  gap: 50px;
+}
+/* ----------------------------------- */
+
+
+
+
+@media (max-width: 768px) {
+
+
+  .columnaUno{
+    margin:0 auto;
+    padding-bottom: 0;
+  }
+
+
+  .columnaDos{
+    margin:0 auto;
+  }
+
+
+  .principalContainer{
+    gap: 50px;
+  }
+ 
+}
+
+
+
+
+  @media (max-width: 480px) {
+
+
+    .columnaUno{
+      width: 450px;
+    }
+ 
+    .columnaDos{
+      width: 450px;
+    }
+
+
+   
+    }

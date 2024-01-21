@@ -1,0 +1,25 @@
+.title {
+    text-align: center;
+    color: var(--second-color);
+    font-family: var(--principal-font);
+    font-weight: 300;
+    font-size: 40px;
+  }
+
+.registerPage {
+    
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 24px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    
+    
+    
+    
+    
+    
+    }
